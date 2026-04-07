@@ -1,0 +1,28 @@
+Agent Teams Demo
+
+
+I need you to put this in out local setting in this project 
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  }
+}
+
+Create a master reference guide for agent teams in a folder called docs. this will be used to help you build better and more effective agent teams in the future. https://code.claude.com/docs/en/agent-teams
+
+
+Goal: build a working full-stack all with a REST API and Angular frontend. The end result should be a running app I can view at http://localhost:3000 with users and posts functionality, plus a QA test report confirming everything works. 
+
+Create a team of 3 teammates using Sonnet:
+
+1. **Backend Dev** -- Build the REST API in src/api/. Create routes for users and posts. When done, message Frontend Dev with the API endpoints.
+
+2. **Frontend Dev** -- Build the Angular UI in src/components/. Wait for Backend Dev's message with the API contracts, then wire up the fetch calls.
+
+3. **QA** -- Write test in tests/. Start with unit test scaffolding, then add integration tests once Backend and Frontend are done.
+
+Final deliverables:
+
+- A running app at http://loaclhost:3000
+- tests/report.md -- pass/fail test results
+- docs/build-summary.md -- what was built, key decisions, and how to run it
