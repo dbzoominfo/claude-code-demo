@@ -46,6 +46,83 @@ The demo also includes notes on how the reports were created:
 
 ---
 
+## Try It Yourself
+
+Follow these steps to download this repo and run the earnings and comps commands on your own machine. No coding experience required.
+
+### Step 1: Download the repo
+
+1. Go to this repository's GitHub page.
+2. Click the green **Code** button near the top right.
+3. Select **Download ZIP**.
+4. Save the ZIP file somewhere easy to find (e.g., your Desktop or Downloads folder).
+
+### Step 2: Extract the folder
+
+1. Find the downloaded ZIP file.
+2. **Right-click** the ZIP file and choose **Extract All** (Windows) or double-click it (Mac).
+3. This will create a folder called `claude-code-demo-main`. You can rename it to `claude-code-demo` if you like.
+
+### Step 3: Open Claude Code and navigate to the folder
+
+1. Open the **Claude Code** desktop app (or a terminal if you have Claude Code installed as a CLI).
+2. In the terminal, type the following command to navigate into the extracted folder. Replace the path below with the actual location on your computer:
+   ```
+   cd ~/Desktop/claude-code-demo-main
+   ```
+   - On **Windows**, this might look like: `cd /c/Users/YourName/Desktop/claude-code-demo-main`
+   - On **Mac**, this might look like: `cd ~/Desktop/claude-code-demo-main`
+
+### Step 4: Launch Claude Code
+
+Once you are inside the project folder, start Claude Code by typing:
+
+```
+claude
+```
+
+This launches the Claude agent in your terminal. You should see a prompt where you can start typing instructions to Claude.
+
+### Step 5: Run the Earnings command
+
+Type the following and press Enter:
+
+```
+/earnings msft q1 2026
+```
+
+Claude will ask you which company and quarter to analyze. For example, you can say:
+
+> Analyze Apple's most recent quarterly earnings
+
+Claude will research the earnings, generate charts, and produce a full analyst-style report — all automatically.
+
+### Step 6: Run the Comps command
+
+Type the following and press Enter:
+
+```
+/comps msft
+```
+
+Claude will ask you for details. For example, you can say:
+
+> Build a comparable company analysis for Microsoft including large-cap software peers
+
+Claude will build a trading comps table with valuation multiples, growth metrics, and a positioning summary.
+
+### Step 7: Try the Agent Teams version (advanced)
+
+For a more powerful multi-agent earnings analysis, try:
+
+```
+/earnings-teams
+```
+
+This runs several specialized agents in parallel (data collectors, analysts, writers, and a QA reviewer) to produce a more comprehensive report faster.
+
+---
+
 ## Repository Structure
 
 ```
