@@ -26,6 +26,14 @@ This training guide covers all available Claude Code plugins, MCP servers, commu
 - **GitHub:** https://github.com/anthropics/financial-services-plugins
 - **Install Guide:** https://support.claude.com/en/articles/13851150-install-financial-services-plugins-for-cowork
 - **DeepWiki Analysis:** https://deepwiki.com/anthropics/financial-services-plugins
+- **Comps Command:** https://github.com/anthropics/financial-services-plugins/blob/main/financial-analysis/commands/comps.md
+- **DCF Command:** https://github.com/anthropics/financial-services-plugins/blob/main/financial-analysis/commands/dcf.md
+- **One-Pager Command:** https://github.com/anthropics/financial-services-plugins/blob/main/investment-banking/commands/one-pager.md
+- **IC Memo Command:** https://github.com/anthropics/financial-services-plugins/blob/main/private-equity/commands/ic-memo.md
+- **Source Command:** https://github.com/anthropics/financial-services-plugins/blob/main/private-equity/commands/source.md
+- **Client Review Command:** https://github.com/anthropics/financial-services-plugins/blob/main/wealth-management/commands/client-review.md
+- **CIM Command:** https://github.com/anthropics/financial-services-plugins/blob/main/investment-banking/commands/cim.md
+- **Merger Model Command:** https://github.com/anthropics/financial-services-plugins/blob/main/investment-banking/commands/merger-model.md
 
 ### Description
 Official Anthropic-maintained plugins that turn Claude into a financial services specialist. Covers investment banking, equity research, private equity, and wealth management. Bundles skills, MCP data connectors, slash commands, and sub-agents for specific financial workflows.
@@ -60,17 +68,17 @@ claude plugin install wealth-management@financial-services-plugins
 
 ### Slash Commands & Endowment Examples
 
-| Command | Purpose | Endowment Example |
-|---|---|---|
-| `/comps [company]` | Comparable company analysis | `/comps Vanguard Total Stock Market ETF` |
-| `/dcf [company]` | DCF valuation model | `/dcf Tesla` -- evaluate endowment equity holding |
-| `/earnings [company] [quarter]` | Post-earnings update | `/earnings Microsoft Q1-2026` |
-| `/one-pager [company]` | One-page company profile (PPT slide) | `/one-pager BlackRock` -- for investment committee |
-| `/ic-memo [project]` | Investment committee memo | `/ic-memo "Alternatives Allocation Increase"` |
-| `/source [criteria]` | Deal sourcing | `/source "impact investing clean energy"` |
-| `/client-review [client]` | Client meeting prep | `/client-review "University Endowment Q2 Review"` |
-| `/cim [target]` | Confidential Information Memorandum | `/cim "Private Credit Fund Opportunity"` |
-| `/merger-model [acquirer] acquiring [target]` | Merger model | `/merger-model "Fund A" acquiring "Fund B"` |
+| Command | Purpose | Endowment Example | Reference |
+|---|---|---|---|
+| `/comps [company]` | Comparable company analysis | `/comps Vanguard Total Stock Market ETF` | [comps.md](https://github.com/anthropics/financial-services-plugins/blob/main/financial-analysis/commands/comps.md) |
+| `/dcf [company]` | DCF valuation model | `/dcf Tesla` -- evaluate endowment equity holding | [dcf.md](https://github.com/anthropics/financial-services-plugins/blob/main/financial-analysis/commands/dcf.md) |
+| `/earnings [company] [quarter]` | Post-earnings update | `/earnings Microsoft Q1-2026` | [earnings.md](https://github.com/anthropics/financial-services-plugins/blob/main/equity-research/commands/earnings.md) |
+| `/one-pager [company]` | One-page company profile (PPT slide) | `/one-pager BlackRock` -- for investment committee | [one-pager.md](https://github.com/anthropics/financial-services-plugins/blob/main/investment-banking/commands/one-pager.md) |
+| `/ic-memo [project]` | Investment committee memo | `/ic-memo "Alternatives Allocation Increase"` | [ic-memo.md](https://github.com/anthropics/financial-services-plugins/blob/main/private-equity/commands/ic-memo.md) |
+| `/source [criteria]` | Deal sourcing | `/source "impact investing clean energy"` | [source.md](https://github.com/anthropics/financial-services-plugins/blob/main/private-equity/commands/source.md) |
+| `/client-review [client]` | Client meeting prep | `/client-review "University Endowment Q2 Review"` | [client-review.md](https://github.com/anthropics/financial-services-plugins/blob/main/wealth-management/commands/client-review.md) |
+| `/cim [target]` | Confidential Information Memorandum | `/cim "Private Credit Fund Opportunity"` | [cim.md](https://github.com/anthropics/financial-services-plugins/blob/main/investment-banking/commands/cim.md) |
+| `/merger-model [acquirer] acquiring [target]` | Merger model | `/merger-model "Fund A" acquiring "Fund B"` | [merger-model.md](https://github.com/anthropics/financial-services-plugins/blob/main/investment-banking/commands/merger-model.md) |
 
 ### Endowment Use Cases
 - Build comparable analyses for endowment portfolio holdings
