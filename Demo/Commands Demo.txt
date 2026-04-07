@@ -1,6 +1,0 @@
-monitor my outlook inbox for any market research oriented emails and provide me with 
-a bullet point summary every morning
-
-
-Create the earnings analysis command and skill:
-https://github.com/anthropics/financial-services-plugins/blob/main/equity-research/commands/earnings.md
